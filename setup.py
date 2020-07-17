@@ -115,7 +115,7 @@ def source_extension(name):
 
 def prepare_sources(sources):
     def to_string(s):
-        if isinstance(s, unicode):
+        if isinstance(s, str):
             return s.encode('utf-8')
         return s
     return [to_string(source) for source in sources]
